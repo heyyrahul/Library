@@ -1,8 +1,13 @@
 import { ApolloServer } from "@apollo/server";
+import express from 'express';
 import { startStandaloneServer } from '@apollo/server/standalone';
 import { typeDefs } from "./schema.js";
 import { resolvers } from "./resolvers.js";
 import { connection } from "./config/db.js";  
+import cors from "cors";
+import jwt from 'jsonwebtoken';
+
+const app = express();
 
 const server = new ApolloServer({
     typeDefs,
@@ -15,9 +20,12 @@ const server = new ApolloServer({
           console.error("Error verifying token:", error);
           return { user: null };
         }
-      },
+      }, 
     resolvers
 });
+app.use(cors());
+
+
 
 (async () => {
     try {
