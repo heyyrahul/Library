@@ -31,4 +31,3 @@ const server = new ApolloServer({
         console.error('Error connecting to MongoDB:', error);
     }
 })();
- 
