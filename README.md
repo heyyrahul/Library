@@ -8,9 +8,9 @@ https://mysterious-bear-cloak.cyclic.app
 ## Frontend
 https://library-kohl-three.vercel.app/
 
-https://github.com/heyyrahul/Library/assets/79692865/8d771a82-2fd2-4445-858c-fc17daf44e37
 
 
+## Video
 https://youtu.be/G5m__FO0jAY
 
 ## Features
