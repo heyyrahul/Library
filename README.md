@@ -2,10 +2,10 @@
 
 The Library App is a web application that allows users to manage a library inventory, borrow and buy books, and search for books based on title or author.
 
-##Backend URL
+## Backend URL
 https://mysterious-bear-cloak.cyclic.app
 
-##Frontend
+## Frontend
 https://library-kohl-three.vercel.app/
 
 https://github.com/heyyrahul/Library/assets/79692865/8d771a82-2fd2-4445-858c-fc17daf44e37
@@ -38,20 +38,20 @@ git clone https://github.com/yourusername/library-app.git
 ## Backend 
 -  npm i
 -  npm run server
-## Backend 
+## Frontend 
 -  npm i
 -  npm run dev
 
 ## Screenshot
 
-##Home
+## Home
 ![scrnli_3_19_2024_11-17-21 PM](https://github.com/heyyrahul/Library/assets/79692865/94e88b41-4f86-4e6e-9cde-019b355d0814)
 
 
-##Signup
+## Signup
 ![scrnli_3_19_2024_11-17-10 PM](https://github.com/heyyrahul/Library/assets/79692865/cb7ac212-d863-4e8f-b82b-4b599b3d4f04)
 
-##Signin
+## Signin
 ![scrnli_3_19_2024_11-16-47 PM](https://github.com/heyyrahul/Library/assets/79692865/dd0da0cc-cc04-4658-9b3f-8502985b701a)
 
 
