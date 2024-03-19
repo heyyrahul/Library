@@ -25,8 +25,8 @@ export const resolvers = {
         throw new Error("Error fetching users");
       }
     },
-    books: async (_, __, { user }) => {
-      checkAuthorization(user, ['ADMIN', 'USER']);
+    books: async (_, __) => {
+      // checkAuthorization(user);
       try {
         const books = await Book.find();
         return books;
@@ -140,7 +140,7 @@ export const resolvers = {
       }
     },
     buyBook: async (_, { bookId }, { user }) => {
-      checkAuthorization(user, ['USER']);
+      // checkAuthorization(user, ['USER']);
       try {
         const book = await Book.findById(bookId);
         if (!book) {
@@ -148,7 +148,7 @@ export const resolvers = {
         }
         if (book.ownerId) {
           throw new Error('Book is already owned by someone else');
-        }
+        } 
         book.ownerId = user._id;
         await book.save();
         return book;
