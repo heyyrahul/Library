@@ -8,7 +8,8 @@ import cors from "cors";
 import jwt from 'jsonwebtoken';
 
 const app = express();
-app.use(cors());
+app.use(cors({origin:"http://localhost:5173/"}));
+
 const server = new ApolloServer({
     typeDefs,
     context: ({ req }) => {
