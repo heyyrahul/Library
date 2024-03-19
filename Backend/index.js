@@ -8,7 +8,7 @@ import cors from "cors";
 import jwt from 'jsonwebtoken';
 
 const app = express();
-
+app.use(cors());
 const server = new ApolloServer({
     typeDefs,
     context: ({ req }) => {
@@ -23,7 +23,7 @@ const server = new ApolloServer({
       }, 
     resolvers
 });
-app.use(cors());
+
 
 
 
