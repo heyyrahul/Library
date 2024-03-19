@@ -1,0 +1,30 @@
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .book-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+  
+  }
+  
+  .book-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .book-card p {
+    margin: 5px 0;
+  }
+  
+  .book-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  
+  }
+  
