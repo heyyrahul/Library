@@ -1,7 +1,7 @@
-// SignIn.js
+
 import React, { useState } from 'react';
 import { useMutation, gql } from '@apollo/client';
-import '../Css/SignIn.css'; // Import the CSS file
+import '../Css/SignIn.css'; 
 import { LOGIN_USER } from './mutation';
 const SIGN_IN = gql`
   mutation SignIn($email: String!, $password: String!) {
