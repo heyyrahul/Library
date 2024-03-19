@@ -6,7 +6,9 @@ import { resolvers } from "./resolvers.js";
 import { connection } from "./config/db.js";  
 import cors from "cors";
 import jwt from 'jsonwebtoken';
+import{config}from 'dotenv'
 
+config();
 const app = express();
 app.use(cors({origin:"http://localhost:5173/"}));
 
@@ -32,7 +34,7 @@ const server = new ApolloServer({
     try {
         await connection; 
         const { url } = await startStandaloneServer(server, {
-            listen: { port: 4000 }
+            listen: { port: process.env.port }
         });
         console.log('Connected to Database');
         console.log(`Server ready at port: ${url}`);
