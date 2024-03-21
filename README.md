@@ -31,7 +31,7 @@ Follow these steps to install and run the Library App:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/library-app.git
+git clone https://github.com/heyyrahul/Library.git
 ```
 
 
